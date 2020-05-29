@@ -1,40 +1,56 @@
-    <meta charset="UTF-8"/>
-    <meta name="viewport" content = "width = device-width, initial-scale=1"/>
-    <meta http-equiv="X-UA-Compatible" content="ie-edge"/>
-    <link rel = "stylesheet" href="./style.css"/>
-    <title> Weather </title>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Aldrich"
+      rel="stylesheet"
+    />
 
-</head>
+    <title>Document</title>
+  </head>
+  <body>
+    <main class="Current-Weather">
+      <h1 class="location">Houston, TX</h1>
 
-<body>
-    <div class="location">
-        <h1 class = "location-timezone"> Timezone</h1>
-        <canvas class = "icon" width="128" height="128"></canvas>
-    </div>
+      <div class="date">
+        <h2 class="section-title section-title--date">Monday</h2>
+        <p class="date_day">December 18</p>
+      </div>
 
+      <div class="temperature">
+        <h2 class="section-title">Temperature</h2>
+        <p class="reading reading--max">-20C</p>
+        <p class="reading reading--min">-98C</p>
+      </div>
 
+      <div class="wind">
+        <h2 class="section-title section-title--wind">Wind</h2>
+        <p class="reading reading--wind">75kph</p>
 
-
-    <div class="temperature">
-        <div class="degree-section">
-            <h2 class="temperature-degree"></h2>
-            <span>F</span>
+        <div class="wind-direction">
+          <p class="sr-only"></p>
+          <div class="wind-arrow"></div>
         </div>
+      </div>
 
+      <div class="info">
+        <p>
+          A simple weather app that isn't a front for a Google Ads campaign!
+        </p>
+        <p>How about that!</p>
+      </div>
 
-
-
-    
-        <div
-            class="temperature-description">
-        </div>
-    </div>
-
-    <script src="skycons.js"></script>
-    <script src="app.js"></script>
-</body>
-
+      <!-- <div class="unit">
+        <label for="cel">C</label>
+        <input type="radio" id="cel" name="unit" checked />
+        <button class="unit_toggle"></button>
+        <label for="fah">F</label>
+        <input type="radio" id="fah" name="unit" />
+      </div> -->
+    </main>
+  </body>
+  <script src="script.js"></script>
 </html>
- 
-
-
